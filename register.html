@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ReyMoto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+
+    <div class="auth-wrapper">
+        <div class="auth-image-side" style="background-image: url('assets/auth-background.jpg');">
+             </div>
+        <div class="auth-form-side">
+            <div class="auth-box new-auth-box">
+                <a href="index.html"><img src="assets/reymoto-logo.png" alt="Reymoto Logo" class="logo"></a>
+                <h2>Register with ReyMotoParts</h2>
+                <p class="subtitle">Reserve the Parts You Need, Pick Up When You're Ready.</p>
+                <form id="register-form">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required placeholder="Create a strong password">
+                    </div>
+                    <button type="submit" class="btn-primary">Create Account</button>
+                </form>
+                <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="error-popup"><p>❌ Something went wrong!</p></div>
+    <script src="script.js"></script>
+</body>
+</html>

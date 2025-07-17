@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ReyMoto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+
+    <div class="auth-wrapper">
+        <div class="auth-image-side" style="background-image: url('assets/auth-background.jpg');">
+            </div>
+        <div class="auth-form-side">
+            <div class="auth-box new-auth-box">
+                <a href="index.html"><img src="assets/reymoto-logo.png" alt="Reymoto Logo" class="logo"></a>
+                <h2>Reserve motor parts with ease</h2>
+                <p class="subtitle">Login to ReyMotoParts and secure what you need</p>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+                <p class="auth-switch">Don't have an account? <a href="register.html">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="success-popup"><p>✅ Registration successful! Please login.</p></div>
+    <div class="popup" id="error-popup"><p>❌ Authentication failed!</p></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
