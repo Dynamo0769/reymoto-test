@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "Spark Plugs",
+        "rating": 4.5,
+        "price": "300",
+        "originalPrice": "500",
+        "discount": "40",
+        "imageUrl": "assets/product-spark-plug.png",
+        "description": "These spark plugs are perfect for reliable engine performance. Designed with quality materials, they ensure smooth ignition, better fuel efficiency, and long-lasting durability.",
+        "features": [
+            "Ensures quick and smooth engine starts",
+            "Improves fuel efficiency and performance",
+            "Built for durability and long-lasting use"
+        ],
+        "reviews": [
+            { "customer": "Customer 1", "rating": 5, "comment": "Super convenient! I booked a repair in minutes and the updates were real-time. Highly recommend." },
+            { "customer": "Customer 2", "rating": 5, "comment": "Very helpful! I reserved the part online and just picked it up, no hassle, no waiting in line." }
+        ],
+        "recommendation_ids": [2, 3]
+    },
+    {
+        "id": 2,
+        "name": "Premium Oil Filter",
+        "rating": 4.0,
+        "price": "400",
+        "originalPrice": "500",
+        "discount": "20",
+        "imageUrl": "assets/product-oil-filter.png",
+        "description": "High-efficiency oil filter that removes contaminants to protect your engine. Ensures optimal performance and longevity.",
+        "features": ["Superior filtration", "Heavy-duty construction", "Anti-drainback valve"],
+        "reviews": [ { "customer": "Customer 3", "rating": 4, "comment": "Good quality filter, does the job well." } ],
+        "recommendation_ids": [1, 3]
+    },
+    {
+        "id": 3,
+        "name": "Motolite Battery",
+        "rating": 3.5,
+        "price": "1,500",
+        "originalPrice": null,
+        "discount": null,
+        "imageUrl": "assets/product-battery.png",
+        "description": "Reliable and long-lasting motorcycle battery that provides consistent starting power in all conditions.",
+        "features": ["Maintenance-free design", "Vibration resistant", "High cranking power"],
+        "reviews": [ { "customer": "Customer 4", "rating": 3, "comment": "It's okay, but I've had better." } ],
+        "recommendation_ids": [1, 2, 3]
+    }
+]
