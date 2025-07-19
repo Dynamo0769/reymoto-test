@@ -100,7 +100,8 @@ section {
     padding-bottom: 5px;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav a.active {
     color: var(--primary-text);
 }
 
@@ -116,12 +117,9 @@ section {
     transition: width 0.3s ease;
 }
 
-.main-nav a:hover::after {
-    width: 100%;
-}
-
+.main-nav a:hover::after,
 .main-nav a.active::after {
-    width: 100%;
+    width: 100%;
 }
 
 .header-right {
@@ -148,44 +146,67 @@ section {
 /* =================================== */
 /* 3. Page Sections                  */
 /* =================================== */
+
 /* --- Hero Section --- */
-.new-hero {
+.hero-section {
     min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('assets/hero-background-dark.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('assets/hero-background.png') no-repeat center center/cover;
 }
 
-.new-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+.hero-text-container {
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-subtitle {
+    color: red;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
-.new-hero p {
-    font-size: 1.2rem;
-    color: var(--secondary-text);
-    margin-bottom: 30px;
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
-.btn-hero {
-    background: linear-gradient(45deg, var(--accent-red), var(--accent-red-dark));
-    color: white;
-    padding: 15px 35px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
+.hero-desc {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+/* --- Glow Button --- */
+.btn-glow {
     display: inline-block;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid var(--accent-red);
+    background-color: transparent;
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.4);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.btn-hero:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(211, 47, 47, 0.3);
+.btn-glow:hover {
+    background-color: var(--accent-red);
+    box-shadow: 0 0 20px rgba(211, 47, 47, 0.8);
 }
+
 
 /* --- About Us Section --- */
 .about-us {
@@ -799,52 +820,4 @@ section {
 
 .header-user-menu:hover .dropdown-menu {
     display: block;
-}
-
-.hero-text-container {
-  text-align: center;
-  color: white;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.hero-subtitle {
-  color: red;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.hero-section h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.hero-desc {
-  font-size: 1.1rem;
-  color: #ccc;
-  margin-bottom: 40px;
-}
-
-.btn-glow {
-  display: inline-block;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: white;
-  border: 2px solid var(--accent-red);
-  background-color: transparent;
-  box-shadow: 0 0 15px rgba(211, 47, 47, 0.4);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.btn-glow:hover {
-  background-color: var(--accent-red);
-  box-shadow: 0 0 20px rgba(211, 47, 47, 0.8);
 }

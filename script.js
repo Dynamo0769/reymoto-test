@@ -170,9 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Highlight active nav item
         const currentPage = window.location.pathname.split('/').pop();
         document.querySelectorAll('.main-nav a').forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active');
-            }
+            const linkPage = link.getAttribute('href').split('#')[0];
+            if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+                link.classList.add('active');
+            }
         });
     }
 
