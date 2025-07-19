@@ -10,10 +10,30 @@
         </ul>
     </nav>
     <div class="header-right">
-        <div class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-            <span id="cart-count">0</span>
+        <div class="header-user-menu">
+            <img src="assets/user-avatar.png" alt="User Avatar" class="user-avatar-main">
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="dropdown-menu">
+                <div class="dropdown-user-info">
+                    <img src="assets/user-avatar.png" alt="User Avatar" class="user-avatar-dropdown">
+                    <div class="dropdown-user-details">
+                        <p class="dropdown-user-name">John Doe</p>
+                        <p class="dropdown-user-email">john.doe@gmail.com</p>
+                    </div>
+                </div>
+                <div class="dropdown-section">
+                    <a href="profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
+                    <a href="garage.html"><i class="fa-solid fa-warehouse"></i> My Garage</a>
+                    <a href="orders.html"><i class="fa-solid fa-box"></i> My Orders</a>
+                </div>
+                <div class="dropdown-section">
+                    <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+                    <a href="#"><i class="fa-regular fa-circle-question"></i> Help & Support</a>
+                </div>
+                <div class="dropdown-section">
+                    <a href="#" id="logout-link"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                </div>
+            </div>
         </div>
-        <button id="logout-button" class="btn-logout">Logout</button>
     </div>
 </header>
