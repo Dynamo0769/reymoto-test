@@ -100,8 +100,7 @@ section {
     padding-bottom: 5px;
 }
 
-.main-nav a:hover,
-.main-nav a.active {
+.main-nav a:hover {
     color: var(--primary-text);
 }
 
@@ -146,9 +145,8 @@ section {
 /* =================================== */
 /* 3. Page Sections                  */
 /* =================================== */
-
 /* --- Hero Section --- */
-.hero-section {
+.new-hero {
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -158,55 +156,33 @@ section {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('assets/hero-background.png') no-repeat center center/cover;
 }
 
-.hero-text-container {
-    text-align: center;
-    color: white;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hero-subtitle {
-    color: red;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.hero-section h1 {
+.new-hero h1 {
     font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1.2;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
-.hero-desc {
-    font-size: 1.1rem;
-    color: #ccc;
-    margin-bottom: 40px;
+.new-hero p {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    margin-bottom: 30px;
 }
 
-/* --- Glow Button --- */
-.btn-glow {
-    display: inline-block;
-    padding: 15px 35px;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 1rem;
+.btn-hero {
+    background: linear-gradient(45deg, var(--accent-red), var(--accent-red-dark));
     color: white;
-    border: 2px solid var(--accent-red);
-    background-color: transparent;
-    box-shadow: 0 0 15px rgba(211, 47, 47, 0.4);
-    transition: all 0.3s ease;
+    padding: 15px 35px;
+    border-radius: 8px;
     text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
-.btn-glow:hover {
-    background-color: var(--accent-red);
-    box-shadow: 0 0 20px rgba(211, 47, 47, 0.8);
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(211, 47, 47, 0.3);
 }
-
 
 /* --- About Us Section --- */
 .about-us {
@@ -821,3 +797,134 @@ section {
 .header-user-menu:hover .dropdown-menu {
     display: block;
 }
+
+/* =================================== */
+/* 1. Global Styles & Design System    */
+/* =================================== */
+:root {
+    --primary-bg: #0D0D0D;
+    --secondary-bg: #1A1A1A;
+    --card-bg: #FFFFFF;
+    --primary-text: #E0E0E0;
+    --secondary-text: #A0A0A0;
+    --dark-text: #121212;
+    --accent-red: #D32F2F;
+    --accent-red-dark: #B71C1C;
+    --border-color: #2C2C2C;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    line-height: 1.7;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =================================== */
+/* 2. Header                         */
+/* =================================== */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 50px;
+    background-color: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo-main {
+    height: 80px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.main-nav a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--primary-text);
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+    width: 100%;
+}
+
+/* =================================== */
+/* 3. Pop-up Notifications           */
+/* =================================== */
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 2000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#success-popup {
+    background-color: #28a745; /* Green for success */
+}
+
+#error-popup {
+    background-color: #dc3545; /* Red for error */
+}
+
+/* Other styles from styles.css continue below... */

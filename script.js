@@ -1,7 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /**
-     * Loads a component from a file into an element.
+     * Shows a popup notification for a few seconds.
+     * @param {string} popupId - The ID of the popup element to show.
+     */
+    function showPopup(popupId) {
+        const popup = document.getElementById(popupId);
+        if (popup) {
+            popup.classList.add('show');
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 4000); // The popup will disappear after 4 seconds
+        }
+    }
+
+    /**
+     * Loads an HTML component from a file into an element.
+     * @param {string} componentId - The ID of the element to load the component into.
+     * @param {string} filePath - The path to the HTML component file.
      */
     async function loadComponent(componentId, filePath) {
         try {
@@ -11,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const element = document.getElementById(componentId);
             if (element) {
                 element.innerHTML = text;
+                // After loading header, attach event listeners that depend on it
+                if (componentId === 'header-placeholder') {
+                    setupHeaderListeners();
+                }
             }
         } catch (error) {
             console.error(`Error loading component ${componentId}:`, error);
@@ -18,7 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Fetches JSON data from a URL.
+     * Fetches JSON data from a given URL.
+     * @param {string} url - The URL to fetch data from.
+     * @returns {Promise<any>} A promise that resolves to the JSON data.
      */
     async function fetchData(url) {
         try {
@@ -32,7 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Builds the product grid for the main page or recommendations.
+     * Builds and displays the product grid.
+     * @param {Array<Object>} products - An array of product objects.
+     * @param {string} containerId - The ID of the container element for the grid.
      */
     function buildProductGrid(products, containerId) {
         const container = document.getElementById(containerId);
@@ -43,96 +67,29 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${p.imageUrl}" alt="${p.name}" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title">${p.name}</h3>
-                        <p class="price">₱${p.price.toLocaleString()}</p>
+                        <p class="price">₱${parseInt(p.price).toLocaleString()}</p>
                     </div>
                 </a>
             </div>`).join('');
     }
-
-    /**
-     * Builds the main product details section with interactive elements.
-     */
-    async function buildProductDetailsPage(allProducts) {
-        const container = document.getElementById('product-details-container');
-        if (!container) return;
-
-        const productId = new URLSearchParams(window.location.search).get('id');
-        const product = allProducts.find(p => p.id == productId);
-
-        if (!product) {
-            container.innerHTML = '<p>Product not found.</p>';
-            return;
-        }
-
-        // Build main details
-        container.innerHTML = `
-            <div class="product-detail-layout">
-                <div class="product-image-gallery"><img src="${product.imageUrl}" alt="${product.name}"></div>
-                <div class="product-details-content">
-                    <h1>${product.name}</h1>
-                    <div class="product-rating">${'★'.repeat(Math.round(product.rating))}${'☆'.repeat(5 - Math.round(product.rating))} <span>${product.rating}/5</span></div>
-                    <div class="product-price-details">
-                        <span class="product-current-price">₱${product.price.toLocaleString()}</span>
-                        ${product.originalPrice ? `<span class="product-original-price">₱${product.originalPrice.toLocaleString()}</span>` : ''}
-                    </div>
-                    <p class="product-description">${product.description}</p>
-                    <div class="product-actions">
-                        <div class="quantity-selector">
-                            <button id="decrease-qty">-</button>
-                            <span id="quantity">1</span>
-                            <button id="increase-qty">+</button>
-                        </div>
-                        <button id="reserve-button" class="btn-reserve">Reserve</button>
-                    </div>
-                </div>
-            </div>`;
-
-        // Build reviews and recommendations
-        buildReviewGrid(product.reviews, 'review-grid');
-        const recommendations = allProducts.filter(p => product.recommendation_ids.includes(p.id) && p.id != product.id);
-        buildProductGrid(recommendations, 'recommendations-grid');
-
-        // Add event listeners for quantity and reserve buttons
-        const qtyEl = document.getElementById('quantity');
-        document.getElementById('increase-qty').addEventListener('click', () => {
-            qtyEl.textContent = parseInt(qtyEl.textContent) + 1;
-        });
-        document.getElementById('decrease-qty').addEventListener('click', () => {
-            let qty = parseInt(qtyEl.textContent);
-            if (qty > 1) {
-                qtyEl.textContent = qty - 1;
-            }
-        });
-        document.getElementById('reserve-button').addEventListener('click', () => {
-            alert(`${qtyEl.textContent} x "${product.name}" has been reserved!`);
-        });
-    }
     
     /**
-    * Builds the customer review grid.
-    */
-    function buildReviewGrid(reviews, containerId) {
-        const container = document.getElementById(containerId);
-        if (!container || !reviews) return;
-        container.innerHTML = reviews.map(r => `
-            <div class="review-card">
-                <div class="product-rating">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
-                <p>"${r.comment}"</p>
-                <span class="review-author">- ${r.customer}</span>
-            </div>`).join('');
-    }
-
-    /**
-     * Main initialization logic for all pages.
+     * Sets up event listeners that depend on the header being loaded.
      */
-    async function initializePage() {
-        // Load header and footer
+    function setupHeaderListeners() {
+        // Highlight active nav item
+        const path = window.location.pathname;
+        const currentPageName = path.split('/').pop() || 'index.html';
+
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            const linkHref = link.getAttribute('href').split('#')[0];
+            if (linkHref === currentPageName) {
+                link.classList.add('active');
+            }
+        });
+
+        // Logout functionality
         const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
-        const headerPath = isLoggedIn ? 'components/header-logged-in.html' : 'components/header-logged-out.html';
-        await loadComponent('header-placeholder', headerPath);
-        await loadComponent('footer-placeholder', 'components/footer.html');
-        
-        // Attach logout listener if logged in
         if (isLoggedIn) {
             const logoutLink = document.getElementById('logout-link');
             if (logoutLink) {
@@ -143,39 +100,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         }
-
-        // Page-specific routing
-        const page = window.location.pathname.split('/').pop() || 'index.html';
-
-        if (page === 'index.html' || page === '') {
-            const products = await fetchData('data/products.json');
-            if (products) buildProductGrid(products, 'product-grid-container');
-        } else if (page.includes('product-details')) {
-            const allProducts = await fetchData('data/products.json');
-            if (allProducts) await buildProductDetailsPage(allProducts);
-        } else if (page.includes('login')) {
-            document.getElementById('login-form')?.addEventListener('submit', (e) => {
-                e.preventDefault();
-                localStorage.setItem('loggedIn', 'true');
-                window.location.href = 'index.html';
-            });
-        } else if (page.includes('register')) {
-            document.getElementById('register-form')?.addEventListener('submit', (e) => {
-                e.preventDefault();
-                localStorage.setItem('loggedIn', 'true');
-                window.location.href = 'index.html';
-            });
-        }
-        
-        // Highlight active nav item
-        const currentPage = window.location.pathname.split('/').pop();
-        document.querySelectorAll('.main-nav a').forEach(link => {
-            const linkPage = link.getAttribute('href').split('#')[0];
-            if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
-                link.classList.add('active');
-            }
-        });
     }
 
+    /**
+     * Main initialization function that runs on page load.
+     */
+    async function initializePage() {
+        // Load common components across all pages
+        const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+        const headerPath = isLoggedIn ? 'components/header-logged-in.html' : 'components/header-logged-out.html';
+        await loadComponent('header-placeholder', headerPath);
+        await loadComponent('footer-placeholder', 'components/footer.html');
+
+        // Page-specific logic
+        const pageName = window.location.pathname.split('/').pop() || 'index.html';
+
+        if (pageName === 'index.html') {
+            const products = await fetchData('data/products.json');
+            if (products) buildProductGrid(products, 'product-grid-container');
+        } 
+        
+        else if (pageName === 'login.html') {
+            // Check for the 'registered' URL parameter to show the success pop-up
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('registered') === 'true') {
+                showPopup('success-popup');
+            }
+
+            document.getElementById('login-form')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // In a real app, you would validate credentials here
+                localStorage.setItem('loggedIn', 'true');
+                window.location.href = 'index.html';
+            });
+        } 
+        
+        else if (pageName === 'register.html') {
+            document.getElementById('register-form')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // In a real app, you would handle registration here
+                // Redirect to login page with a parameter to show the success message
+                window.location.href = 'login.html?registered=true';
+            });
+        }
+    }
+
+    // Run the app
     initializePage();
 });
