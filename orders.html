@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Reymoto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="dashboard-page">
+        <div class="container">
+            <h1 class="page-title">My Orders</h1>
+            <div class="dashboard-content">
+                <div class="orders-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#12345</td>
+                                <td>18/07/2025</td>
+                                <td>$150.00</td>
+                                <td><span class="status shipped">Shipped</span></td>
+                                <td><a href="#" class="btn-view">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>#12344</td>
+                                <td>15/07/2025</td>
+                                <td>$85.50</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                                <td><a href="#" class="btn-view">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

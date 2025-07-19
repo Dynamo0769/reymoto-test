@@ -442,3 +442,70 @@ section {
     font-weight: 600;
     color: var(--primary-text);
 }
+
+/* --- Dashboard Pages --- */
+.dashboard-page {
+    padding: 60px 0;
+    background-color: #121212;
+}
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.dashboard-content {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- Profile Form --- */
+.profile-form .form-group {
+    margin-bottom: 25px;
+}
+.profile-form label {
+    font-weight: 600;
+}
+
+/* --- Garage Page --- */
+.vehicle-card {
+    background: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* --- Orders Page --- */
+.orders-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.orders-table th, .orders-table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--card-border);
+}
+.orders-table th {
+    color: var(--primary-text);
+}
+.orders-table .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.orders-table .status.shipped {
+    background-color: rgba(69, 123, 157, 0.2);
+    color: #457B9D;
+}
+.orders-table .status.delivered {
+    background-color: rgba(42, 157, 143, 0.2);
+    color: #2A9D8F;
+}
+.btn-view {
+    font-weight: 600;
+    color: var(--primary-color);
+}
