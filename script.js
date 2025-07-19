@@ -166,6 +166,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = 'index.html';
             });
         }
+        
+        // Highlight active nav item
+        const currentPage = window.location.pathname.split('/').pop();
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
     }
 
     initializePage();

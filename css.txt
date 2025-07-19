@@ -1,0 +1,3876 @@
+/* Desktop - 6 */
+
+position: relative;
+width: 1440px;
+height: 5013px;
+
+background: #110F13;
+
+
+/* Rectangle 145 */
+
+position: absolute;
+width: 1440px;
+height: 588px;
+left: -9px;
+top: 113px;
+
+background: url(istockphoto-908009456-1024x1024.jpg);
+opacity: 0.2;
+
+
+/* Hero Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 22px;
+
+position: absolute;
+width: 1064px;
+height: 398px;
+left: 188px;
+top: 218px;
+
+
+
+/* Frame 254 */
+
+width: 1064px;
+height: 230px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Caption */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 428px;
+height: 26px;
+left: 318px;
+top: 0px;
+
+
+
+/* Vector */
+
+width: 27px;
+height: 16px;
+
+background: linear-gradient(180deg, #FF2400 7%, #8A0707 82%);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Welcome to Rey moto parts */
+
+width: 389px;
+height: 26px;
+
+font-family: 'ABeeZee';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+display: flex;
+align-items: center;
+letter-spacing: 0.4em;
+text-transform: uppercase;
+
+background: linear-gradient(94.85deg, #FF2400 8.51%, #8A0707 94.21%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* From Spare Parts to Full Repairs We’ve Got You Covered */
+
+position: absolute;
+width: 1064px;
+height: 182px;
+left: 0px;
+top: 48px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 76px;
+line-height: 120%;
+/* or 91px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Frame 253 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 677px;
+height: 146px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* See What’s Available, Get It Fixed, Ride Without Worries */
+
+width: 677px;
+height: 38px;
+
+font-family: 'Crimson Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 160%;
+/* or 38px */
+text-align: center;
+
+/* Paragraph */
+color: #77798F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 222px;
+height: 68px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 3 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 22px 40px;
+gap: 10px;
+
+width: 222px;
+height: 68px;
+
+background: #110F13;
+box-shadow: 0px 0px 10px rgba(255, 68, 71, 0.7);
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Get started for free */
+
+width: 142px;
+height: 24px;
+
+font-family: 'Afacad';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height */
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 510434375_2137096326702517_3337278294423101561_n 2 */
+
+position: absolute;
+width: 84.38px;
+height: 83px;
+left: 10px;
+top: 19px;
+
+background: url(510434375_2137096326702517_3337278294423101561_n.png);
+
+
+/* 510434375_2137096326702517_3337278294423101561_n 3 */
+
+position: absolute;
+width: 84.38px;
+height: 83px;
+left: 10px;
+top: 19px;
+
+background: url(510434375_2137096326702517_3337278294423101561_n.png);
+
+
+/* CTA */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 138px;
+height: 64px;
+left: 1273px;
+top: 27px;
+
+
+
+/* Frame 3 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 40px;
+gap: 10px;
+
+width: 138px;
+height: 62px;
+
+filter: drop-shadow(0px 0px 10px rgba(255, 68, 71, 0.7));
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Sign Up */
+
+width: 64px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Motorcycle-Fill--Streamline-Phosphor-Fill */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 369px;
+top: 124px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0.99%;
+right: 1%;
+top: 20.91%;
+bottom: 20.89%;
+
+background: #000000;
+
+
+/* Rectangle 147 */
+
+position: absolute;
+width: 1440px;
+height: 147px;
+left: 0px;
+top: 638px;
+
+background: linear-gradient(354.93deg, #110F13 42.74%, rgba(17, 15, 19, 0) 86.35%);
+
+
+/* Frame 259 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+isolation: isolate;
+
+position: absolute;
+width: 402px;
+height: 28px;
+left: 533px;
+top: 42px;
+
+
+
+/* Home */
+
+width: 56px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(101.85deg, #FFFFFF 22.1%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* About */
+
+width: 58px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(101.85deg, #FFFFFF 22.1%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Shop */
+
+width: 49px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(101.85deg, #FFFFFF 22.1%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Features */
+
+width: 82px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(101.85deg, #FFFFFF 22.1%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+
+
+/* Contact */
+
+width: 77px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(101.85deg, #FFFFFF 22.1%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 4;
+
+
+/* Rectangle 148 */
+
+position: absolute;
+width: 55px;
+height: 3px;
+left: 1px;
+top: 22px;
+
+background: linear-gradient(86.78deg, #FF2400 2.08%, #630707 89.34%);
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Group 1321314333 */
+
+position: absolute;
+width: 1368px;
+height: 669px;
+left: 36px;
+top: 802px;
+
+
+
+/* Group 1321314332 */
+
+position: absolute;
+width: 1368px;
+height: 669px;
+left: 36px;
+top: 802px;
+
+
+
+/* Group 1321314331 */
+
+position: absolute;
+width: 1368px;
+height: 669px;
+left: 36px;
+top: 802px;
+
+
+
+/* Group 1321314273 */
+
+position: absolute;
+width: 1368px;
+height: 669px;
+left: 36px;
+top: 802px;
+
+
+
+/* Group 1321314272 */
+
+position: absolute;
+width: 1368px;
+height: 669px;
+left: 36px;
+top: 802px;
+
+
+
+/* Group 1321314271 */
+
+position: absolute;
+width: 1368px;
+height: 669px;
+left: 36px;
+top: 802px;
+
+
+
+/* Group 1321314270 */
+
+position: absolute;
+width: 1368px;
+height: 669px;
+left: 36px;
+top: 802px;
+
+
+
+/* Rectangle 1013 */
+
+position: absolute;
+width: 1368px;
+height: 664px;
+left: 36px;
+top: 807px;
+
+background: #1A1A1C;
+border-radius: 10px;
+
+
+/* Rectangle 1014 */
+
+position: absolute;
+width: 737px;
+height: 664px;
+left: 667px;
+top: 807px;
+
+background: url(motorbike-407186_1280.jpg);
+border-radius: 0px 10px 10px 0px;
+
+
+/* Polygon 3 */
+
+position: absolute;
+width: 663.7px;
+height: 210.99px;
+left: 666.06px;
+top: 802px;
+
+background: #1A1A1C;
+transform: rotate(89.92deg);
+
+
+/* About Us */
+
+position: absolute;
+width: 292px;
+height: 72px;
+left: 58px;
+top: 931px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 120%;
+/* identical to box height, or 72px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Group 4313 */
+
+position: absolute;
+width: 126px;
+height: 19px;
+left: 93px;
+top: 908px;
+
+
+
+/* Before you go on */
+
+position: absolute;
+width: 126px;
+height: 19px;
+left: 93px;
+top: 908px;
+
+font-family: 'Crimson Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 120%;
+/* or 22px */
+text-align: center;
+
+background: linear-gradient(94.85deg, #FF2400 8.51%, #8A0707 94.21%), #FFFFFF;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Button Add to cart */
+
+position: absolute;
+width: 223px;
+height: 65px;
+left: 93px;
+top: 1244px;
+
+filter: drop-shadow(0px 4px 4px #1A1A1C);
+
+
+/* Rectangle 87 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 223px;
+height: 65px;
+left: 93px;
+top: 1244px;
+
+background: #110F13;
+box-shadow: 0px 4px 4px rgba(255, 68, 71, 0.7);
+border-radius: 10px;
+transform: rotate(180deg);
+
+
+/* Explore more */
+
+position: absolute;
+width: 180px;
+height: 54px;
+left: 103px;
+top: 1255px;
+
+font-family: 'Crimson Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 120%;
+/* or 34px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624147 */
+
+position: absolute;
+width: 1295px;
+height: 2px;
+left: 72px;
+top: 2448px;
+
+background: #47484C;
+
+
+/* Rectangle 34624148 */
+
+position: absolute;
+width: 1357px;
+height: 2px;
+left: 42px;
+top: 2490px;
+
+background: #47484C;
+
+
+/* Rectangle 34624149 */
+
+position: absolute;
+width: 1440px;
+height: 147px;
+left: 0px;
+top: 1342px;
+
+background: linear-gradient(354.93deg, #110F13 42.74%, rgba(17, 15, 19, 0) 86.35%);
+
+
+/* Group 1321314327 */
+
+position: absolute;
+width: 417.87px;
+height: 637.72px;
+left: 511px;
+top: 1744px;
+
+
+
+/* Group 4316 */
+
+position: absolute;
+width: 355px;
+height: 603px;
+left: 511px;
+top: 1744px;
+
+transform: matrix(-0.99, 0.11, 0.11, 0.99, 0, 0);
+
+
+/* Adobe Express - file 1 */
+
+position: absolute;
+width: 355px;
+height: 603px;
+left: 511px;
+top: 1744px;
+
+background: url(Adobe Express - file.png);
+transform: matrix(-0.99, 0.11, 0.11, 0.99, 0, 0);
+
+
+/* Group 4314 */
+
+position: absolute;
+width: 270px;
+height: 555px;
+left: 568.04px;
+top: 1781.17px;
+
+transform: matrix(-0.99, 0.11, 0.11, 0.99, 0, 0);
+
+
+/* Rectangle 1015 */
+
+position: absolute;
+width: 270px;
+height: 555px;
+left: 568.04px;
+top: 1781.17px;
+
+background: #110F13;
+transform: matrix(-0.99, 0.11, 0.11, 0.99, 0, 0);
+
+
+/* 510434375_2137096326702517_3337278294423101561_n 4 */
+
+position: absolute;
+width: 84.38px;
+height: 83px;
+left: 655px;
+top: 1831px;
+
+background: url(510434375_2137096326702517_3337278294423101561_n.png);
+transform: rotate(-10.67deg);
+
+
+/* Group 1321314324 */
+
+position: absolute;
+width: 211.4px;
+height: 34.69px;
+left: 622.89px;
+top: 2011.39px;
+
+transform: rotate(-10.31deg);
+
+
+/* Rectangle 7 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 210.94px;
+height: 31.91px;
+left: 623.38px;
+top: 2011.47px;
+
+background: #1A1D21;
+border: 1px solid #7C7777;
+border-radius: 8px;
+transform: matrix(0.98, -0.19, 0.19, 0.98, 0, 0);
+
+
+/* Mail */
+
+position: absolute;
+width: 18.24px;
+height: 18px;
+left: 634.7px;
+top: 2053.69px;
+
+background: url(.png);
+transform: matrix(0.98, -0.19, 0.15, 0.99, 0, 0);
+
+
+/* Gmail */
+
+position: absolute;
+width: 139.41px;
+height: 24px;
+left: 655px;
+top: 2023px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 24px;
+/* or 185% */
+display: flex;
+align-items: center;
+letter-spacing: 0.15px;
+
+color: #6A6C6F;
+
+transform: matrix(0.98, -0.19, 0.19, 0.98, 0, 0);
+
+
+/* Group 1321314325 */
+
+position: absolute;
+width: 208.8px;
+height: 34.66px;
+left: 632.54px;
+top: 2051.66px;
+
+transform: rotate(-10.73deg);
+
+
+/* Rectangle 7 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 208.34px;
+height: 31.91px;
+left: 633.05px;
+top: 2051.75px;
+
+background: #1A1D21;
+border: 1px solid #7C7777;
+border-radius: 8px;
+transform: matrix(0.98, -0.2, 0.2, 0.98, 0, 0);
+
+
+/* Lock */
+
+position: absolute;
+width: 17.59px;
+height: 16.98px;
+left: 645px;
+top: 2093px;
+
+background: url(.png);
+transform: matrix(0.97, -0.22, 0.18, 0.98, 0, 0);
+
+
+/* Password */
+
+position: absolute;
+width: 137.7px;
+height: 24px;
+left: 666px;
+top: 2063px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 24px;
+/* or 185% */
+display: flex;
+align-items: center;
+letter-spacing: 0.15px;
+
+color: #6A6C6F;
+
+transform: matrix(0.98, -0.2, 0.2, 0.98, 0, 0);
+
+
+/* Group 1321314325 */
+
+position: absolute;
+width: 123.61px;
+height: 31.63px;
+left: 698px;
+top: 2112px;
+
+transform: rotate(-11.64deg);
+
+
+/* Rectangle 10 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 123.61px;
+height: 31.63px;
+left: 698px;
+top: 2112px;
+
+background: linear-gradient(89.42deg, #FF2400 7%, #420709 82%);
+border: 1px solid #7C7777;
+border-radius: 8px;
+transform: rotate(-11.64deg);
+
+
+/* Sign In */
+
+position: absolute;
+width: 41px;
+height: 28px;
+left: 738px;
+top: 2122px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 28px;
+/* identical to box height, or 215% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+transform: rotate(-10.87deg);
+
+
+/* Sign Up */
+
+position: absolute;
+width: 47px;
+height: 28px;
+left: 679.71px;
+top: 2299.16px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 28px;
+/* identical to box height, or 215% */
+
+background: linear-gradient(101.85deg, #E82000 37.66%, rgba(66, 7, 9, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+transform: rotate(-12.62deg);
+
+
+/* Service Tracking */
+
+position: absolute;
+width: 149px;
+height: 25px;
+right: 146.83px;
+top: 2114px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 21.24px;
+line-height: 120%;
+/* or 25px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* The system provides real-time updates, such as under repair, waiting for parts, or completed, along with the estimated time of completion. */
+
+position: absolute;
+width: 254.42px;
+height: 75px;
+right: 151.58px;
+top: 2151.44px;
+
+font-family: 'Crimson Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* or 116% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #A0A1A8;
+
+
+
+/* div */
+
+position: absolute;
+width: 260.72px;
+height: 182.97px;
+left: 1020px;
+top: 1835px;
+
+
+
+/* Online Booking System */
+
+position: absolute;
+width: 209px;
+height: 25px;
+right: -8.28px;
+top: 53px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 21.24px;
+line-height: 120%;
+/* or 25px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Easily book your service by selecting the type repair or maintenance and choosing your preferred date and time slot. */
+
+position: absolute;
+width: 260px;
+height: 75px;
+right: -0.28px;
+top: 91px;
+
+font-family: 'Crimson Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* or 116% */
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #A0A1A8;
+
+
+
+/* Group */
+
+position: absolute;
+width: 55px;
+height: 48.65px;
+left: 211px;
+top: -25px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 81.49%;
+right: 13.22%;
+top: -13.66%;
+bottom: 108.2%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 96.2%;
+right: -1.48%;
+top: -13.66%;
+bottom: 108.19%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 80.93%;
+right: -2.03%;
+top: -12%;
+bottom: 87.07%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 82.82%;
+right: -0.13%;
+top: -9.78%;
+bottom: 89.3%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 89.93%;
+right: 3.24%;
+top: -7.66%;
+bottom: 97.56%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 82.02%;
+right: 8.48%;
+top: 1.69%;
+bottom: 87.07%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 84.24%;
+right: 10.71%;
+top: 4.35%;
+bottom: 89.74%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* div */
+
+position: absolute;
+width: 260.7px;
+height: 194.56px;
+left: 138px;
+top: 2060px;
+
+
+
+/* Service History */
+
+position: absolute;
+width: 139px;
+height: 25px;
+left: -9px;
+top: 72px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 21.24px;
+line-height: 120%;
+/* or 25px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Easily track all your past repairs and maintenance. View dates, service types, parts replaced, and mechanic notes all in one place. */
+
+position: absolute;
+width: 260px;
+height: 75px;
+left: 0px;
+top: 104px;
+
+font-family: 'Crimson Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* or 116% */
+display: flex;
+align-items: center;
+
+color: #A0A1A8;
+
+
+
+/* Group 1321314330 */
+
+position: absolute;
+width: 47px;
+height: 65px;
+left: 0px;
+top: -9px;
+
+
+
+/* Clip path group */
+
+position: absolute;
+left: 0%;
+right: 81.97%;
+top: -4.63%;
+bottom: 71.22%;
+
+
+
+/* a */
+
+position: absolute;
+left: 0%;
+right: 81.97%;
+top: -4.63%;
+bottom: 71.22%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 81.97%;
+top: -4.63%;
+bottom: 71.22%;
+
+background: #000000;
+
+
+/* Group */
+
+position: absolute;
+left: 0.03%;
+right: 81.99%;
+top: -4.63%;
+bottom: 71.22%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0.03%;
+right: 81.99%;
+top: -4.63%;
+bottom: 71.22%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 7.67%;
+right: 91.56%;
+top: 22.1%;
+bottom: 76.87%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.07%;
+right: 86.57%;
+top: 1.54%;
+bottom: 81.5%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 5.37%;
+right: 91.56%;
+top: 4.11%;
+bottom: 92.29%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 4.6%;
+right: 92.71%;
+top: 9.25%;
+bottom: 90.23%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 8.06%;
+right: 90.79%;
+top: 9.25%;
+bottom: 90.23%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 4.6%;
+right: 92.71%;
+top: 11.31%;
+bottom: 88.18%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 8.06%;
+right: 90.79%;
+top: 11.31%;
+bottom: 88.18%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 4.6%;
+right: 92.71%;
+top: 13.36%;
+bottom: 85.61%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 8.06%;
+right: 90.79%;
+top: 13.36%;
+bottom: 85.61%;
+
+background: linear-gradient(180deg, #FF0000 38%, #990000 100%);
+
+
+/* div */
+
+position: absolute;
+width: 260.7px;
+height: 194.56px;
+left: 129px;
+top: 1839px;
+
+
+
+/* Group */
+
+position: absolute;
+width: 55.6px;
+height: 67.82px;
+left: 8px;
+top: -24px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.07%;
+right: 82.99%;
+top: -9.85%;
+bottom: 77.48%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 8.8%;
+right: 89.56%;
+top: 15.05%;
+bottom: 83.7%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 4.7%;
+right: 92.02%;
+top: 15.05%;
+bottom: 83.7%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 14.3%;
+right: 82.42%;
+top: 4.47%;
+bottom: 90.55%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 10.44%;
+right: 75.61%;
+top: -12.34%;
+bottom: 96.77%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 19.22%;
+right: 77.5%;
+top: 4.47%;
+bottom: 90.55%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Online Inventory */
+
+position: absolute;
+width: 155px;
+height: 25px;
+left: 0px;
+top: 62px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 21.24px;
+line-height: 120%;
+/* or 25px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* easily browse available parts, check stock levels, and view prices all in one convenient place. */
+
+position: absolute;
+width: 260px;
+height: 56px;
+left: 8px;
+top: 105px;
+
+font-family: 'Crimson Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* or 116% */
+display: flex;
+align-items: center;
+
+color: #A0A1A8;
+
+
+
+/* Redefining motorcycle service with smart tools and real-time updates. */
+
+position: absolute;
+width: 1064px;
+height: 144px;
+left: 187px;
+top: 1560px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 120%;
+/* or 72px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 1467px;
+height: 1890px;
+left: -14px;
+top: 2534px;
+
+background: #1A1A1C;
+
+
+/* Group */
+
+position: absolute;
+left: 85.56%;
+right: 10.76%;
+top: 40.47%;
+bottom: 58.33%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 87.6%;
+right: 12.05%;
+top: 40.56%;
+bottom: 59.38%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 85.56%;
+right: 10.76%;
+top: 40.47%;
+bottom: 58.33%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 88.14%;
+right: 11.47%;
+top: 40.71%;
+bottom: 59.18%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 87.64%;
+right: 11.98%;
+top: 40.78%;
+bottom: 59.12%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 88.65%;
+right: 10.97%;
+top: 40.65%;
+bottom: 59.25%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 86.44%;
+right: 12.47%;
+top: 40.87%;
+bottom: 58.98%;
+
+background: linear-gradient(180deg, #FF0000 36%, #990000 100%);
+
+
+/* Frame 65 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 54px;
+gap: 12px;
+
+position: absolute;
+width: 218px;
+height: 60px;
+left: calc(50% - 218px/2 - 8px);
+top: 4347px;
+
+background: #110F13;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 62px;
+
+
+/* View More */
+
+width: 89px;
+height: 28px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Redefining motorcycle service with smart tools and real-time updates. */
+
+position: absolute;
+width: 1064px;
+height: 144px;
+left: 174px;
+top: 2744px;
+
+font-family: 'Crimson Text';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 120%;
+/* or 72px */
+text-align: center;
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 84.77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Footer 10 Dark */
+
+position: absolute;
+width: 1441px;
+height: 515px;
+left: -1px;
+top: 4498px;
+
+background: #1A1A1C;
+
+
+/* Footer UI */
+
+position: absolute;
+width: 1074px;
+height: 90px;
+left: 182px;
+top: 397px;
+
+
+
+/* Social */
+
+position: absolute;
+width: 145px;
+height: 40px;
+left: 1111px;
+top: 447px;
+
+
+
+/* Group 1321314362 */
+
+position: absolute;
+width: 39px;
+height: 40px;
+left: 1217px;
+top: 447px;
+
+
+
+/* Circle */
+
+position: absolute;
+left: 84.46%;
+right: 12.84%;
+top: 86.8%;
+bottom: 5.44%;
+
+background: #1DA1F2;
+
+
+/* Twitter */
+
+position: absolute;
+left: 85.29%;
+right: 13.67%;
+top: 89.51%;
+bottom: 8.25%;
+
+
+
+/* twitter icon */
+
+position: absolute;
+left: 85.29%;
+right: 13.67%;
+top: 89.51%;
+bottom: 8.25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 85.29%;
+right: 13.67%;
+top: 89.51%;
+bottom: 8.25%;
+
+background: #FFFFFF;
+
+
+/* Group 1321314361 */
+
+position: absolute;
+width: 39px;
+height: 40px;
+left: 1111px;
+top: 447px;
+
+
+
+/* Circle */
+
+position: absolute;
+left: 77.1%;
+right: 20.19%;
+top: 86.8%;
+bottom: 5.44%;
+
+background: #3B5998;
+
+
+/* facebook icon */
+
+position: absolute;
+left: 78.11%;
+right: 21.15%;
+top: 88.54%;
+bottom: 7.18%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 78.11%;
+right: 21.15%;
+top: 88.54%;
+bottom: 7.18%;
+
+background: #FFFFFF;
+
+
+/* © 2025 APCOM. All Ri */
+
+position: absolute;
+width: 287px;
+height: 14px;
+left: 576px;
+top: 459px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+/* identical to box height, or 100% */
+text-align: center;
+
+/* White */
+color: #FFFFFF;
+
+
+
+/* Divider */
+
+position: absolute;
+width: 1074px;
+height: 1px;
+left: 182px;
+top: 397px;
+
+/* White */
+background: #FFFFFF;
+opacity: 0.1;
+
+
+/* Frame 1618871509 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 166px;
+
+position: absolute;
+width: 1100px;
+height: 210px;
+left: 181px;
+top: 111px;
+
+
+
+/* Navigation */
+
+width: 142px;
+height: 184px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Home About Us What W */
+
+position: absolute;
+width: 141px;
+height: 150px;
+left: 1px;
+top: 34px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+/* or 200% */
+
+/* White */
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+
+
+/* Navigation */
+
+position: absolute;
+width: 91px;
+height: 18px;
+left: 0px;
+top: 0px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-transform: uppercase;
+
+/* White */
+color: #FFFFFF;
+
+
+
+/* Navigation */
+
+width: 142px;
+height: 124px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home About Us What W */
+
+position: absolute;
+width: 141px;
+height: 90px;
+left: 309px;
+top: 34px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+/* or 200% */
+
+/* White */
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+
+
+/* Navigation */
+
+position: absolute;
+width: 53px;
+height: 18px;
+left: 308px;
+top: 0px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-transform: uppercase;
+
+/* White */
+color: #FFFFFF;
+
+
+
+/* Navigation */
+
+width: 166px;
+height: 180px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Home About Us What W */
+
+position: absolute;
+width: 165px;
+height: 150px;
+left: 617px;
+top: 30px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+/* or 200% */
+
+/* White */
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+
+
+/* Navigation */
+
+position: absolute;
+width: 76px;
+height: 18px;
+left: 616px;
+top: 0px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-transform: uppercase;
+
+/* White */
+color: #FFFFFF;
+
+
+
+/* Talk to us */
+
+width: 152px;
+height: 210px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* support@apcom.com +6 */
+
+position: absolute;
+width: 181px;
+height: 180px;
+left: 0px;
+top: 34px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+/* or 200% */
+
+/* White */
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+
+
+/* TALK TO US */
+
+position: absolute;
+width: 87px;
+height: 18px;
+left: 0px;
+top: 0px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+text-transform: uppercase;
+
+/* White */
+color: #FFFFFF;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 84.38px;
+height: 83px;
+left: 168px;
+top: 418px;
+
+background: url(510434375_2137096326702517_3337278294423101561_n.png);
+
+
+/* Group 1321314363 */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 1162px;
+top: 447px;
+
+
+
+/* Circle */
+
+position: absolute;
+left: 80.64%;
+right: 16.59%;
+top: 86.8%;
+bottom: 5.44%;
+
+background: #FF0000;
+
+
+/* Subtract */
+
+position: absolute;
+left: 81.12%;
+right: 17.09%;
+top: 88.93%;
+bottom: 7.57%;
+
+background: #FFFFFF;
+
+
+/* Group 1321314360 */
+
+position: absolute;
+width: 2438px;
+height: 1258px;
+left: -476px;
+top: 3045px;
+
+
+
+/* Group 1321314341 */
+
+position: absolute;
+width: 2370px;
+height: 620px;
+left: -408px;
+top: 3045px;
+
+
+
+/* Group 1321314338 */
+
+position: absolute;
+width: 2370px;
+height: 620px;
+left: -408px;
+top: 3045px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 55%;
+right: 19.31%;
+top: 60.74%;
+bottom: 26.89%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 55%;
+right: 19.31%;
+top: 60.74%;
+bottom: 31.48%;
+
+background: url(image_2025-07-07_002547545.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Led Headlight */
+
+position: absolute;
+left: 62.92%;
+right: 27.15%;
+top: 69.2%;
+bottom: 30.16%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Easy to install and weatherproof • Enhances night visibility and safety */
+
+position: absolute;
+left: 58.33%;
+right: 22.85%;
+top: 70.08%;
+bottom: 28.69%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 62.5%;
+right: 26.81%;
+top: 71.63%;
+bottom: 27.57%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624152 */
+
+position: absolute;
+left: 55%;
+right: 19.31%;
+top: 68.38%;
+bottom: 31.58%;
+
+background: #000000;
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 82.78%;
+right: -8.47%;
+top: 60.74%;
+bottom: 26.89%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 82.78%;
+right: -8.47%;
+top: 60.74%;
+bottom: 31.48%;
+
+background: url(image_2025-07-07_002817375.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Tire Bike */
+
+position: absolute;
+left: 92.64%;
+right: 1.32%;
+top: 69.2%;
+bottom: 30.16%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Improved Cornering Stability • High Mileage */
+
+position: absolute;
+left: 87.78%;
+right: -3.19%;
+top: 70.08%;
+bottom: 28.69%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 90.28%;
+right: -0.97%;
+top: 71.63%;
+bottom: 27.57%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 110.56%;
+right: -36.25%;
+top: 60.74%;
+bottom: 26.89%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 110.56%;
+right: -36.25%;
+top: 60.74%;
+bottom: 31.48%;
+
+background: url(image_2025-07-07_003053360.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Side Mirrors (pair) */
+
+position: absolute;
+left: 116.94%;
+right: -29.93%;
+top: 69.2%;
+bottom: 30.16%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Adjustable and easy to install • Fits most standard motorcycle models */
+
+position: absolute;
+left: 112.99%;
+right: -33.54%;
+top: 70.08%;
+bottom: 28.69%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 118.06%;
+right: -28.75%;
+top: 71.63%;
+bottom: 27.57%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624153 */
+
+position: absolute;
+left: 110.56%;
+right: -36.25%;
+top: 68.36%;
+bottom: 31.6%;
+
+background: #000000;
+
+
+/* Group 1321314336 */
+
+position: absolute;
+width: 1170px;
+height: 620px;
+left: -408px;
+top: 3045px;
+
+
+
+/* Card 7 */
+
+position: absolute;
+width: 370px;
+height: 620px;
+left: -408px;
+top: 3045px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #F0EEED;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 37.1%;
+
+background: url(g_Yuasa-YTX14-BS-Motorbike-Battery-2.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Battery 12v */
+
+position: absolute;
+left: 34.59%;
+right: 34.59%;
+top: 68.39%;
+bottom: 26.45%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Vibration-Resistant •Corrosion-Resistant Terminals */
+
+position: absolute;
+left: 18.38%;
+right: 19.46%;
+top: 75.48%;
+bottom: 14.52%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 29.19%;
+right: 29.19%;
+top: 88.06%;
+bottom: 5.48%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+left: 15.58%;
+right: 15.58%;
+top: 15%;
+bottom: 15%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624151 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 62.58%;
+bottom: 37.1%;
+
+background: #000000;
+
+
+/* Card 8 */
+
+position: absolute;
+width: 370px;
+height: 620px;
+left: -8px;
+top: 3045px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 37.1%;
+
+background: url(image_2025-07-07_001938361.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Oil Filter */
+
+position: absolute;
+left: 38.38%;
+right: 38.38%;
+top: 68.39%;
+bottom: 26.45%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • High-Quality Material • Heat & Pressure Resistant */
+
+position: absolute;
+left: 22.16%;
+right: 23.24%;
+top: 75.48%;
+bottom: 14.52%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 29.19%;
+right: 29.19%;
+top: 88.06%;
+bottom: 5.48%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624152 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 62.74%;
+bottom: 36.94%;
+
+background: #000000;
+
+
+/* Card 9 */
+
+position: absolute;
+width: 370px;
+height: 620px;
+left: 392px;
+top: 3045px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 37.58%;
+
+background: url(image_2025-07-07_002223992.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Spark Plug */
+
+position: absolute;
+left: 35.41%;
+right: 35.14%;
+top: 68.39%;
+bottom: 26.45%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Smooth Engine Performance • Improved Fuel Efficiency */
+
+position: absolute;
+left: 19.73%;
+right: 20.54%;
+top: 75.48%;
+bottom: 14.52%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 29.19%;
+right: 29.19%;
+top: 88.06%;
+bottom: 5.48%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2 + 0.5px);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624151 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 62.42%;
+bottom: 37.26%;
+
+background: #000000;
+
+
+/* Rectangle 34624152 */
+
+position: absolute;
+left: 82.78%;
+right: -8.47%;
+top: 68.36%;
+bottom: 31.6%;
+
+background: #000000;
+
+
+/* Group 1321314342 */
+
+position: absolute;
+width: 2370px;
+height: 620px;
+left: -476px;
+top: 3683px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: -33.06%;
+right: 107.36%;
+top: 73.47%;
+bottom: 14.16%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: -33.06%;
+right: 107.36%;
+top: 73.47%;
+bottom: 18.75%;
+
+background: url(image_2025-07-07_002547545.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Led Headlight */
+
+position: absolute;
+left: -25.14%;
+right: 115.21%;
+top: 81.93%;
+bottom: 17.43%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Easy to install and weatherproof • Enhances night visibility and safety */
+
+position: absolute;
+left: -29.72%;
+right: 110.9%;
+top: 82.8%;
+bottom: 15.96%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: -25.56%;
+right: 114.86%;
+top: 84.36%;
+bottom: 14.84%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624152 */
+
+position: absolute;
+left: -33.06%;
+right: 107.36%;
+top: 81.11%;
+bottom: 18.85%;
+
+background: #000000;
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: -5.28%;
+right: 79.58%;
+top: 73.47%;
+bottom: 14.16%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: -5.28%;
+right: 79.58%;
+top: 73.47%;
+bottom: 18.75%;
+
+background: url(image_2025-07-07_002817375.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Tire Bike */
+
+position: absolute;
+left: 4.58%;
+right: 89.38%;
+top: 81.93%;
+bottom: 17.43%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Improved Cornering Stability • High Mileage */
+
+position: absolute;
+left: -0.28%;
+right: 84.86%;
+top: 82.8%;
+bottom: 15.96%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 2.22%;
+right: 87.08%;
+top: 84.36%;
+bottom: 14.84%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 22.5%;
+right: 51.81%;
+top: 73.47%;
+bottom: 14.16%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 22.5%;
+right: 51.81%;
+top: 73.47%;
+bottom: 18.75%;
+
+background: url(image_2025-07-07_003053360.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Side Mirrors (pair) */
+
+position: absolute;
+left: 28.89%;
+right: 58.12%;
+top: 81.93%;
+bottom: 17.43%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Adjustable and easy to install • Fits most standard motorcycle models */
+
+position: absolute;
+left: 24.93%;
+right: 54.51%;
+top: 82.8%;
+bottom: 15.96%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 30%;
+right: 59.31%;
+top: 84.36%;
+bottom: 14.84%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624153 */
+
+position: absolute;
+left: 22.5%;
+right: 51.81%;
+top: 81.09%;
+bottom: 18.87%;
+
+background: #000000;
+
+
+/* Group 1321314336 */
+
+position: absolute;
+width: 1170px;
+height: 620px;
+left: 724px;
+top: 3683px;
+
+
+
+/* Card 7 */
+
+position: absolute;
+width: 370px;
+height: 620px;
+left: 724px;
+top: 3683px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #F0EEED;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 37.1%;
+
+background: url(g_Yuasa-YTX14-BS-Motorbike-Battery-2.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Battery 12v */
+
+position: absolute;
+left: 34.59%;
+right: 34.59%;
+top: 68.39%;
+bottom: 26.45%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Vibration-Resistant •Corrosion-Resistant Terminals */
+
+position: absolute;
+left: 18.38%;
+right: 19.46%;
+top: 75.48%;
+bottom: 14.52%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 29.19%;
+right: 29.19%;
+top: 88.06%;
+bottom: 5.48%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+left: 15.58%;
+right: 15.58%;
+top: 15%;
+bottom: 15%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624151 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 62.58%;
+bottom: 37.1%;
+
+background: #000000;
+
+
+/* Card 8 */
+
+position: absolute;
+width: 370px;
+height: 620px;
+left: 1124px;
+top: 3683px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 37.1%;
+
+background: url(image_2025-07-07_001938361.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Oil Filter */
+
+position: absolute;
+left: 38.38%;
+right: 38.38%;
+top: 68.39%;
+bottom: 26.45%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • High-Quality Material • Heat & Pressure Resistant */
+
+position: absolute;
+left: 22.16%;
+right: 23.24%;
+top: 75.48%;
+bottom: 14.52%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 29.19%;
+right: 29.19%;
+top: 88.06%;
+bottom: 5.48%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624152 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 62.74%;
+bottom: 36.94%;
+
+background: #000000;
+
+
+/* Card 9 */
+
+position: absolute;
+width: 370px;
+height: 620px;
+left: 1524px;
+top: 3683px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Colors / White */
+background: #FFFFFF;
+/* Colors / Grey */
+border: 2px solid #EBEAED;
+border-radius: 10px;
+
+
+/* Product image */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 37.58%;
+
+background: url(image_2025-07-07_002223992.png);
+border-radius: 10px 10px 0px 0px;
+
+
+/* Spark Plug */
+
+position: absolute;
+left: 35.41%;
+right: 35.14%;
+top: 68.39%;
+bottom: 26.45%;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #110F13;
+
+
+
+/* • Smooth Engine Performance • Improved Fuel Efficiency */
+
+position: absolute;
+left: 19.73%;
+right: 20.54%;
+top: 75.48%;
+bottom: 14.52%;
+
+/* Text / Paragraph */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+/* Colors / Text */
+color: rgba(21, 20, 57, 0.4);
+
+
+
+/* Small - Fill */
+
+position: absolute;
+left: 29.19%;
+right: 29.19%;
+top: 88.06%;
+bottom: 5.48%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Action / Primary */
+background: #110F13;
+border-radius: 100px;
+
+
+/* More Details */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: calc(50% - 106px/2 + 0.5px);
+top: calc(50% - 28px/2);
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+background: linear-gradient(101.85deg, #FFFFFF 37.66%, rgba(255, 255, 255, 0.5) 123.29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* Rectangle 34624151 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 62.42%;
+bottom: 37.26%;
+
+background: #000000;
+
+
+/* Rectangle 34624152 */
+
+position: absolute;
+left: -5.28%;
+right: 79.58%;
+top: 81.09%;
+bottom: 18.87%;
+
+background: #000000;
