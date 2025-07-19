@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * Loads a component from a file into an element.
-     * @param {string} componentId - The ID of the element to load the component into.
-     * @param {string} filePath - The path to the component's HTML file.
      */
     async function loadComponent(componentId, filePath) {
         try {
@@ -21,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * Fetches JSON data from a URL.
-     * @param {string} url - The URL to fetch data from.
      */
     async function fetchData(url) {
         try {
@@ -35,28 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Builds the product grid on the main page.
-     * @param {Array} products - The array of product objects.
-     * @param {string} containerId - The ID of the container to build the grid in.
+     * Builds the product grid for the main page or recommendations.
      */
     function buildProductGrid(products, containerId) {
         const container = document.getElementById(containerId);
-        if (!container) return;
+        if (!container || !products) return;
         container.innerHTML = products.map(p => `
             <div class="product-card">
                 <a href="product-details.html?id=${p.id}" class="product-card-link">
                     <img src="${p.imageUrl}" alt="${p.name}" class="product-image">
                     <div class="product-info">
                         <h3 class="product-title">${p.name}</h3>
-                        <p class="product-price">₱${p.price.toLocaleString()}</p>
+                        <p class="price">₱${p.price.toLocaleString()}</p>
                     </div>
                 </a>
             </div>`).join('');
     }
 
     /**
-     * Builds the product details page.
-     * @param {Array} allProducts - The array of all product objects.
+     * Builds the main product details section with interactive elements.
      */
     async function buildProductDetailsPage(allProducts) {
         const container = document.getElementById('product-details-container');
@@ -70,32 +64,75 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Build main details
         container.innerHTML = `
             <div class="product-detail-layout">
                 <div class="product-image-gallery"><img src="${product.imageUrl}" alt="${product.name}"></div>
                 <div class="product-details-content">
                     <h1>${product.name}</h1>
-                    <p class="product-description">${product.description}</p>
+                    <div class="product-rating">${'★'.repeat(Math.round(product.rating))}${'☆'.repeat(5 - Math.round(product.rating))} <span>${product.rating}/5</span></div>
                     <div class="product-price-details">
                         <span class="product-current-price">₱${product.price.toLocaleString()}</span>
+                        ${product.originalPrice ? `<span class="product-original-price">₱${product.originalPrice.toLocaleString()}</span>` : ''}
                     </div>
+                    <p class="product-description">${product.description}</p>
                     <div class="product-actions">
-                        <button id="reserve-button" class="btn-primary">Reserve Now</button>
+                        <div class="quantity-selector">
+                            <button id="decrease-qty">-</button>
+                            <span id="quantity">1</span>
+                            <button id="increase-qty">+</button>
+                        </div>
+                        <button id="reserve-button" class="btn-reserve">Reserve</button>
                     </div>
                 </div>
             </div>`;
+
+        // Build reviews and recommendations
+        buildReviewGrid(product.reviews, 'review-grid');
+        const recommendations = allProducts.filter(p => product.recommendation_ids.includes(p.id) && p.id != product.id);
+        buildProductGrid(recommendations, 'recommendations-grid');
+
+        // Add event listeners for quantity and reserve buttons
+        const qtyEl = document.getElementById('quantity');
+        document.getElementById('increase-qty').addEventListener('click', () => {
+            qtyEl.textContent = parseInt(qtyEl.textContent) + 1;
+        });
+        document.getElementById('decrease-qty').addEventListener('click', () => {
+            let qty = parseInt(qtyEl.textContent);
+            if (qty > 1) {
+                qtyEl.textContent = qty - 1;
+            }
+        });
+        document.getElementById('reserve-button').addEventListener('click', () => {
+            alert(`${qtyEl.textContent} x "${product.name}" has been reserved!`);
+        });
+    }
+    
+    /**
+    * Builds the customer review grid.
+    */
+    function buildReviewGrid(reviews, containerId) {
+        const container = document.getElementById(containerId);
+        if (!container || !reviews) return;
+        container.innerHTML = reviews.map(r => `
+            <div class="review-card">
+                <div class="product-rating">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+                <p>"${r.comment}"</p>
+                <span class="review-author">- ${r.customer}</span>
+            </div>`).join('');
     }
 
     /**
-     * Checks login status, loads the correct header, and attaches logout listener.
+     * Main initialization logic for all pages.
      */
-    async function handleAuthAndHeader() {
+    async function initializePage() {
+        // Load header and footer
         const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
         const headerPath = isLoggedIn ? 'components/header-logged-in.html' : 'components/header-logged-out.html';
-
-        // Correctly target the placeholder div
         await loadComponent('header-placeholder', headerPath);
-
+        await loadComponent('footer-placeholder', 'components/footer.html');
+        
+        // Attach logout listener if logged in
         if (isLoggedIn) {
             const logoutLink = document.getElementById('logout-link');
             if (logoutLink) {
@@ -106,43 +143,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         }
-    }
 
-    /**
-     * Initializes the correct logic based on the current page.
-     */
-    async function initializePage() {
-        await handleAuthAndHeader();
-        // Correctly target the placeholder div
-        await loadComponent('footer-placeholder', 'components/footer.html');
-
+        // Page-specific routing
         const page = window.location.pathname.split('/').pop() || 'index.html';
 
         if (page === 'index.html' || page === '') {
             const products = await fetchData('data/products.json');
-            // Correctly target the product grid container
             if (products) buildProductGrid(products, 'product-grid-container');
         } else if (page.includes('product-details')) {
             const allProducts = await fetchData('data/products.json');
             if (allProducts) await buildProductDetailsPage(allProducts);
         } else if (page.includes('login')) {
-            const loginForm = document.getElementById('login-form');
-            if (loginForm) {
-                loginForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    localStorage.setItem('loggedIn', 'true');
-                    window.location.href = 'profile.html';
-                });
-            }
+            document.getElementById('login-form')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                localStorage.setItem('loggedIn', 'true');
+                window.location.href = 'index.html';
+            });
         } else if (page.includes('register')) {
-            const registerForm = document.getElementById('register-form');
-            if (registerForm) {
-                registerForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    localStorage.setItem('loggedIn', 'true');
-                    window.location.href = 'profile.html';
-                });
-            }
+            document.getElementById('register-form')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                localStorage.setItem('loggedIn', 'true');
+                window.location.href = 'index.html';
+            });
         }
     }
 
