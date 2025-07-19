@@ -82,7 +82,7 @@ section {
 }
 
 .logo-main {
-    height: 40px;
+    height: 80px;
 }
 
 .main-nav ul {
@@ -765,4 +765,34 @@ section {
     .review-grid {
         grid-template-columns: 1fr;
     }
+}
+.user-avatar-main {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.user-avatar-dropdown {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    z-index: 999;
+}
+
+.header-user-menu:hover .dropdown-menu {
+    display: block;
 }
