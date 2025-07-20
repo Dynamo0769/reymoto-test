@@ -1,150 +1,160 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /**
-     * Shows a popup notification for a few seconds.
-     * @param {string} popupId - The ID of the popup element to show.
-     */
-    function showPopup(popupId) {
-        const popup = document.getElementById(popupId);
-        if (popup) {
-            popup.classList.add('show');
-            setTimeout(() => {
-                popup.classList.remove('show');
-            }, 4000); // The popup will disappear after 4 seconds
-        }
-    }
-
-    /**
-     * Loads an HTML component from a file into an element.
-     * @param {string} componentId - The ID of the element to load the component into.
-     * @param {string} filePath - The path to the HTML component file.
-     */
-    async function loadComponent(componentId, filePath) {
+    // --- Component & Data Loading ---
+    async function loadComponent(url, placeholderId) {
         try {
-            const response = await fetch(filePath);
-            if (!response.ok) throw new Error(`Failed to fetch component: ${filePath}`);
-            const text = await response.text();
-            const element = document.getElementById(componentId);
-            if (element) {
-                element.innerHTML = text;
-                // After loading header, attach event listeners that depend on it
-                if (componentId === 'header-placeholder') {
-                    setupHeaderListeners();
-                }
-            }
-        } catch (error) {
-            console.error(`Error loading component ${componentId}:`, error);
-        }
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`Failed to fetch ${url}`);
+            const placeholder = document.getElementById(placeholderId);
+            if (placeholder) placeholder.innerHTML = await response.text();
+        } catch (error) { console.error(`Error loading component: ${error}`); }
     }
 
-    /**
-     * Fetches JSON data from a given URL.
-     * @param {string} url - The URL to fetch data from.
-     * @returns {Promise<any>} A promise that resolves to the JSON data.
-     */
     async function fetchData(url) {
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Failed to fetch data from ${url}`);
             return await response.json();
-        } catch (error) {
-            console.error(error);
-            return null;
-        }
+        } catch (error) { console.error(error); return null; }
     }
 
-    /**
-     * Builds and displays the product grid.
-     * @param {Array<Object>} products - An array of product objects.
-     * @param {string} containerId - The ID of the container element for the grid.
-     */
+    // --- Dynamic Page Builders ---
     function buildProductGrid(products, containerId) {
         const container = document.getElementById(containerId);
         if (!container || !products) return;
         container.innerHTML = products.map(p => `
             <div class="product-card">
-                <a href="product-details.html?id=${p.id}" class="product-card-link">
-                    <img src="${p.imageUrl}" alt="${p.name}" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-title">${p.name}</h3>
-                        <p class="price">₱${parseInt(p.price).toLocaleString()}</p>
+                <img src="${p.imageUrl}" alt="${p.name}">
+                <div class="product-info">
+                    <h3>${p.name}</h3>
+                    <p class="price">₱${p.price.toLocaleString()}</p>
+                    <div class="product-buttons">
+                        <a href="product-details.html?id=${p.id}" class="btn-details">More Details</a>
                     </div>
-                </a>
+                </div>
             </div>`).join('');
     }
-    
-    /**
-     * Sets up event listeners that depend on the header being loaded.
-     */
-    function setupHeaderListeners() {
-        // Highlight active nav item
-        const path = window.location.pathname;
-        const currentPageName = path.split('/').pop() || 'index.html';
 
-        document.querySelectorAll('.main-nav a').forEach(link => {
-            const linkHref = link.getAttribute('href').split('#')[0];
-            if (linkHref === currentPageName) {
-                link.classList.add('active');
-            }
-        });
+    async function buildProductDetailsPage(allProducts) {
+        const container = document.getElementById('product-details-container');
+        if (!container) return;
 
-        // Logout functionality
-        const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
-        if (isLoggedIn) {
-            const logoutLink = document.getElementById('logout-link');
-            if (logoutLink) {
-                logoutLink.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    localStorage.removeItem('loggedIn');
-                    window.location.href = 'index.html';
-                });
-            }
+        const productId = new URLSearchParams(window.location.search).get('id');
+        const product = allProducts.find(p => p.id == productId);
+
+        if (!product) {
+            container.innerHTML = '<p>Product not found.</p>';
+            return;
+        }
+
+        const recommendations = allProducts.filter(p => product.recommendation_ids.includes(p.id) && p.id != product.id);
+
+        container.innerHTML = `
+            <div class="product-detail-layout">
+                <div class="product-image-gallery"><img src="${product.imageUrl}" alt="${product.name}"></div>
+                <div class="product-details-content">
+                    <div class="product-main-info">
+                        <h1>${product.name}</h1>
+                        <div class="product-rating">${'★'.repeat(Math.round(product.rating))}${'☆'.repeat(5 - Math.round(product.rating))} <span>${product.rating}/5</span></div>
+                        <div class="product-price-details">
+                            <span class="product-current-price">₱${product.price.toLocaleString()}</span>
+                            ${product.originalPrice ? `<span class="product-original-price">₱${product.originalPrice.toLocaleString()}</span>` : ''}
+                            ${product.discount ? `<span class="product-discount">-${product.discount}%</span>` : ''}
+                        </div>
+                        <p class="product-description">${product.description}</p>
+                        <div class="product-features"><ul>${product.features.map(f => `<li>${f}</li>`).join('')}</ul></div>
+                        <div class="product-actions">
+                            <div class="quantity-selector"><button id="decrease-qty">-</button><span id="quantity">1</span><button id="increase-qty">+</button></div>
+                            <button id="reserve-button" class="btn-reserve">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="reviews-section"><div class="section-header"><h2>Ratings & Reviews</h2></div><div class="review-grid">${product.reviews.map(r => `<div class="review-card"><div class="product-rating">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div><p>"${r.comment}"</p><span class="review-author">- ${r.customer}</span></div>`).join('')}</div></section>
+            <section class="recommendations-section"><div class="section-header"><h2>Recommendations</h2></div><div class="product-grid" id="recommendations-grid"></div></section>
+        `;
+
+        buildProductGrid(recommendations, 'recommendations-grid');
+
+        const qtyEl = document.getElementById('quantity');
+        const increaseBtn = document.getElementById('increase-qty');
+        const decreaseBtn = document.getElementById('decrease-qty');
+        const reserveBtn = document.getElementById('reserve-button');
+
+        if(increaseBtn) { increaseBtn.addEventListener('click', () => { qtyEl.textContent = parseInt(qtyEl.textContent) + 1; }); }
+        if(decreaseBtn) { decreaseBtn.addEventListener('click', () => { let qty = parseInt(qtyEl.textContent); if (qty > 1) { qtyEl.textContent = qty - 1; } }); }
+        if(reserveBtn) {
+            reserveBtn.addEventListener('click', () => {
+                const cartCountEl = document.querySelector('.cart-icon #cart-count');
+                const quantity = parseInt(qtyEl.textContent);
+                if (cartCountEl) { cartCountEl.textContent = parseInt(cartCountEl.textContent || 0) + quantity; }
+                alert(`${quantity} x "${product.name}" has been reserved!`);
+            });
         }
     }
 
-    /**
-     * Main initialization function that runs on page load.
-     */
+    // --- Script Initializers & Page Routing ---
+    const page = window.location.pathname.split('/').pop() || 'index.html';
+
     async function initializePage() {
-        // Load common components across all pages
-        const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
-        const headerPath = isLoggedIn ? 'components/header-logged-in.html' : 'components/header-logged-out.html';
-        await loadComponent('header-placeholder', headerPath);
-        await loadComponent('footer-placeholder', 'components/footer.html');
+        const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+        const headerFile = isLoggedIn ? 'header-logged-in.html' : 'header-logged-out.html';
 
-        // Page-specific logic
-        const pageName = window.location.pathname.split('/').pop() || 'index.html';
-
-        if (pageName === 'index.html') {
-            const products = await fetchData('data/products.json');
-            if (products) buildProductGrid(products, 'product-grid-container');
-        } 
+        // Correctly load components from the 'components' folder
+        await Promise.all([
+            loadComponent(`components/${headerFile}`, 'header-placeholder'),
+            loadComponent('components/footer.html', 'footer-placeholder')
+        ]);
         
-        else if (pageName === 'login.html') {
-            // Check for the 'registered' URL parameter to show the success pop-up
-            const params = new URLSearchParams(window.location.search);
-            if (params.get('registered') === 'true') {
-                showPopup('success-popup');
-            }
+        // Correctly load data from the 'data' folder
+        const products = await fetchData('data/products.json');
 
+        if (page === 'index.html' || page === '') {
+            if (products) buildProductGrid(products, 'product-grid-container');
+        } else if (page.includes('product-details')) {
+            if (products) await buildProductDetailsPage(products);
+        } else if (page.includes('login')) {
+            if (new URLSearchParams(window.location.search).get('registered') === 'true') {
+                showPopup('Registration successful! Please login.');
+            }
             document.getElementById('login-form')?.addEventListener('submit', (e) => {
                 e.preventDefault();
-                // In a real app, you would validate credentials here
-                localStorage.setItem('loggedIn', 'true');
-                window.location.href = 'index.html';
+                localStorage.setItem('isLoggedIn', 'true');
+                document.body.classList.add('fade-out');
+                setTimeout(() => { window.location.href = 'index.html'; }, 500);
             });
-        } 
-        
-        else if (pageName === 'register.html') {
+        } else if (page.includes('register')) {
             document.getElementById('register-form')?.addEventListener('submit', (e) => {
                 e.preventDefault();
-                // In a real app, you would handle registration here
-                // Redirect to login page with a parameter to show the success message
-                window.location.href = 'login.html?registered=true';
+                document.body.classList.add('fade-out');
+                setTimeout(() => { window.location.href = 'login.html?registered=true'; }, 500);
             });
         }
+        
+        // This makes the logout button work after the header is loaded
+        document.body.addEventListener('click', (event) => {
+            if (event.target && event.target.id === 'logout-button') {
+                localStorage.removeItem('isLoggedIn');
+                document.body.classList.add('fade-out');
+                setTimeout(() => { window.location.href = 'index.html'; }, 500);
+            }
+        });
     }
 
-    // Run the app
+    function showPopup(message, isError = false) {
+        const popup = document.createElement('div');
+        popup.className = 'popup show';
+        if(isError) popup.style.backgroundColor = '#D32F2F'; // Use accent red for errors
+        else popup.style.backgroundColor = '#4CAF50'; // Green for success
+        
+        popup.innerHTML = `<p>${message}</p>`;
+        document.body.appendChild(popup);
+
+        setTimeout(() => { 
+            popup.classList.remove('show');
+            setTimeout(() => { document.body.removeChild(popup); }, 500);
+        }, 3000);
+    }
+
     initializePage();
 });
